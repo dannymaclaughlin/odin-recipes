@@ -34,7 +34,8 @@ img {
 /* for class="content" */
 .content {
     display: flex;
-    padding: 10px;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 /* for class="item" */
@@ -58,9 +59,21 @@ img {
     flex-direction: column;
 }
 
-.top-right {
+.left img {
+    /* padding-left: 30px; */
     display: flex;
     flex-direction: column-reverse;
+    padding-top: 23px;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-right: 80px;
+    padding-top: 0px;
+    border-top: 0px;
+    margin-top: 0px;
 }
 
 .gyudonHeader {
@@ -76,6 +89,7 @@ img {
 .description {
     display: flex;
     flex-direction: row;
+    border: 10px;
 }
 
 

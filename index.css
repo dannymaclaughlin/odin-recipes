@@ -4,25 +4,103 @@
 
 /* start code after here */
 
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 .header {
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
 }
 
-.recipe-list {
+/* sets the images widths to 350px */
+img {
+    width: 350px;
+    /* height: auto; */
+}
+
+/* creates an effect that scales 1.05x when hovering over images with the item class */
+.item img:hover {
+    transform: scale(1.05);
+}
+
+.content-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+}
+
+/* for class="content" */
+.content {
+    display: flex;
+    padding: 10px;
+}
+
+/* for class="item" */
+.item {
+    height: 600px;
+    margin: 12px;
+
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 220px;
+    text-align: center;
+}
+
+.spaghettiHeader {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.gyudonHeader {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.calderetaHeader {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+} */
+
+.description {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+/* .recipe-list {
     font-family: Helvetica, Arial, sans-serif;
     display: flex;
     justify-content: space-between;
 }
 
-img {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
-}
+
 
 .images {
     display: flex;
     justify-content: space-between;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
